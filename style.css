@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container::before{
+    content: "";
+    
+    background-image:url(images/bg.png);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    opacity: 0.4;
+}
+
+.weather{
+    color:white;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.weather1{
+    font-size: 4rem;
+
+}
+
+.weather  p{
+    font-size: 2rem;
+}
+
+.weather > div{
+    margin: 0.5rem;
+}
+
+.weather span {
+    font-size: 0.75rem;
+}
+.weather2{
+    
+    text-align: center;
+    
+}
+
+
+.weather2 span{
+    display: inline-block;
+    margin-top: 0.5rem;
+    
+}
+
+.weather3 img{
+    width: 2rem;
+}
+
+nav{
+    border-radius: 100px 100px 0 0;
+    padding: 1rem 0;
+    height: 100px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.274);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(226, 223, 217, 0.044);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+nav form{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+.searchFeild{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    background:transparent;
+    font-size: 1.5rem;
+    padding: 0 1.5rem ;
+    border-top-left-radius: 4vh;
+    border-bottom-left-radius: 4vh;
+    color: white;
+    
+
+}
+
+nav form button {
+    border: none;
+    border-top-right-radius:3vh;
+    border-bottom-right-radius: 3vh;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: rgb(44, 22, 122);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
